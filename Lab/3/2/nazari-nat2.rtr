@@ -1,0 +1,61 @@
+
+!
+Version 12.3
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname ISP
+enable secret 5 $1$KIN9$ZEF4I5X4Ro8lyDy97ipTgw
+!
+!
+!
+!
+ip subnet-zero
+!
+ip cef
+no ip domain-lookup
+!
+!
+!
+!
+!
+!
+!
+!
+interface Serial0/0
+ ip address 200.152.200.1 255.255.255.252
+ no ip directed-broadcast
+ clock rate 148000
+!
+interface FastEthernet0/0
+ ip address 25.16.59.1 255.255.255.252
+ no ip directed-broadcast
+!
+interface FastEthernet0/1
+ no ip address
+ no ip directed-broadcast
+ shutdown
+!
+!
+!
+!
+!
+ip classless
+no ip http server
+!
+ip route 200.152.100.64 255.255.255.248 200.152.200.2
+!
+!
+!
+!
+!
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+no scheduler allocate
+end
+

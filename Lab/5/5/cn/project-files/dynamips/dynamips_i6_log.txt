@@ -1,0 +1,72 @@
+Sep 18 22:06:56.143 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 18 22:06:56.144 HYPERVISOR: Started on IP = localhost, TCP port = 11840.
+Sep 18 22:06:56.608 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 18 22:06:56.609 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ali\Desktop\5\cn\project-files\dynamips 
+Sep 18 22:06:56.609 GENERAL: working_dir=C:\Users\Ali\Desktop\5\cn\project-files\dynamips
+Sep 18 22:06:56.610 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ali\Desktop\5\cn\project-files\dynamips\9d75fd20-56c4-42af-a5d8-083b08713be0 
+Sep 18 22:06:56.610 GENERAL: working_dir=C:\Users\Ali\Desktop\5\cn\project-files\dynamips\9d75fd20-56c4-42af-a5d8-083b08713be0
+Sep 18 22:06:56.615 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Sep 18 22:06:56.618 VM: VM R4 created.
+Sep 18 22:06:56.619 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Sep 18 22:06:56.619 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Sep 18 22:06:56.620 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:06:56.621 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Sep 18 22:06:56.622 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 22:06:56.623 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:06:56.624 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60171348 
+Sep 18 22:06:56.625 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Sep 18 22:06:56.626 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Sep 18 22:06:56.627 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Sep 18 22:06:56.628 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Sep 18 22:06:56.629 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:06:56.629 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+Sep 18 22:06:56.631 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:06:56.631 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-2FE 
+Sep 18 22:06:56.712 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 22:07:14.766 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 22:12:05.547 HYPERVISOR: exec_cmd: nio create_udp udp-1b5c651a-4eb6-4925-8c32-bd7fd85d456d 10010 127.0.0.1 10011 
+Sep 18 22:12:05.797 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-1b5c651a-4eb6-4925-8c32-bd7fd85d456d 
+Sep 18 22:12:05.797 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:12:21.861 HYPERVISOR: exec_cmd: nio create_udp udp-cbf94555-b642-4b49-8852-1f1565671a2d 10014 127.0.0.1 10015 
+Sep 18 22:12:21.869 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-cbf94555-b642-4b49-8852-1f1565671a2d 
+Sep 18 22:12:21.869 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:13:15.456 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 22:13:34.298 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 22:13:48.988 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Sep 18 22:13:48.989 HYPERVISOR: exec_cmd: vm set_ghost_file R4 C:\Users\Ali\Desktop\5\cn\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M.image-512.ghost 
+Sep 18 22:13:48.991 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:13:48.992 HYPERVISOR: exec_cmd: vm set_config R4 configs\i4_startup-config.cfg 
+Sep 18 22:13:48.993 HYPERVISOR: exec_cmd: vm start R4 
+Sep 18 22:14:19.349 HYPERVISOR: exec_cmd: vm extract_config R4 
+Sep 18 22:20:19.364 HYPERVISOR: exec_cmd: vm extract_config R4 
+Sep 18 23:24:49.161 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 23:24:49.163 HYPERVISOR: exec_cmd: vm stop R4 
+Sep 18 23:24:49.424 VM: VM R4 shutdown.
+Sep 18 23:24:49.428 HYPERVISOR: exec_cmd: vm extract_config R4 
+Sep 18 23:25:53.196 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 23:25:53.196 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R4 0 0 
+Sep 18 23:25:53.199 HYPERVISOR: exec_cmd: nio delete udp-1b5c651a-4eb6-4925-8c32-bd7fd85d456d 
+Sep 18 23:26:02.970 HYPERVISOR: exec_cmd: nio create_udp udp-3a4fa408-e0ea-47e7-937d-1c08f405b230 10010 127.0.0.1 10011 
+Sep 18 23:26:02.973 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-3a4fa408-e0ea-47e7-937d-1c08f405b230 
+Sep 18 23:26:02.974 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 23:26:12.193 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Sep 18 23:26:12.195 HYPERVISOR: exec_cmd: vm set_ghost_file R4 C:\Users\Ali\Desktop\5\cn\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M.image-512.ghost 
+Sep 18 23:26:12.196 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 23:26:12.197 HYPERVISOR: exec_cmd: vm set_config R4 configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Sep 18 23:26:12.197 HYPERVISOR: exec_cmd: vm start R4 
+Sep 18 23:38:50.545 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 23:38:50.547 HYPERVISOR: exec_cmd: vm stop R4 
+Sep 18 23:38:50.775 VM: VM R4 shutdown.
+Sep 18 23:38:50.777 HYPERVISOR: exec_cmd: vm extract_config R4 
+Sep 18 23:38:55.868 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 23:38:55.871 HYPERVISOR: exec_cmd: vm extract_config R4 
+Sep 18 23:38:56.435 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Sep 18 23:38:56.439 HYPERVISOR: exec_cmd: vm set_ghost_file R4 C:\Users\Ali\Desktop\5\cn\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M.image-512.ghost 
+Sep 18 23:38:56.442 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 23:38:56.443 HYPERVISOR: exec_cmd: vm set_config R4 configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Sep 18 23:38:56.444 HYPERVISOR: exec_cmd: vm start R4 
+Sep 18 23:44:26.784 HYPERVISOR: exec_cmd: vm extract_config R4 
+Sep 19 00:57:17.778 HYPERVISOR: Stopped.
+Sep 19 00:57:17.950 VM: VM R4 shutdown.
+Sep 19 00:57:17.950 VM: VM R4 destroyed.
+Sep 19 00:57:17.964 GENERAL: reset done.

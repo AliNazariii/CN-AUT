@@ -1,0 +1,84 @@
+Sep 18 22:06:35.750 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 18 22:06:35.751 HYPERVISOR: Started on IP = localhost, TCP port = 11825.
+Sep 18 22:06:36.219 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 18 22:06:36.219 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ali\Desktop\5\cn\project-files\dynamips 
+Sep 18 22:06:36.220 GENERAL: working_dir=C:\Users\Ali\Desktop\5\cn\project-files\dynamips
+Sep 18 22:06:36.220 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ali\Desktop\5\cn\project-files\dynamips\34145d27-c81f-405a-a565-e20910ffae4d 
+Sep 18 22:06:36.220 GENERAL: working_dir=C:\Users\Ali\Desktop\5\cn\project-files\dynamips\34145d27-c81f-405a-a565-e20910ffae4d
+Sep 18 22:06:36.224 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Sep 18 22:06:36.227 VM: VM R3 created.
+Sep 18 22:06:36.229 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Sep 18 22:06:36.229 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Sep 18 22:06:36.230 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 22:06:36.231 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Sep 18 22:06:36.232 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 22:06:36.232 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 22:06:36.233 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60171348 
+Sep 18 22:06:36.233 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Sep 18 22:06:36.233 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Sep 18 22:06:36.234 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Sep 18 22:06:36.234 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Sep 18 22:06:36.235 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 22:06:36.236 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Sep 18 22:06:36.237 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 22:06:36.237 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+Sep 18 22:06:36.321 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 22:07:08.941 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 22:12:53.003 HYPERVISOR: exec_cmd: nio create_udp udp-8e07b3e7-887d-4199-b726-904ae45fe8bf 10020 127.0.0.1 10021 
+Sep 18 22:12:53.261 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-8e07b3e7-887d-4199-b726-904ae45fe8bf 
+Sep 18 22:12:53.263 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 22:13:47.829 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Sep 18 22:13:47.831 VM: VM Ghost created.
+Sep 18 22:13:47.832 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 22:13:47.832 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 18 22:13:47.833 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Ali\Desktop\5\cn\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M.image-512.ghost 
+Sep 18 22:13:47.834 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Sep 18 22:13:47.835 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 18 22:13:47.836 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Sep 18 22:13:47.836 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 18 22:13:48.263 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 18 22:13:48.264 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 18 22:13:48.512 VM: VM Ghost shutdown.
+Sep 18 22:13:48.513 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Sep 18 22:13:48.515 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 18 22:13:48.515 VM: VM Ghost destroyed.
+Sep 18 22:13:48.527 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Sep 18 22:13:48.527 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Ali\Desktop\5\cn\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M.image-512.ghost 
+Sep 18 22:13:48.528 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 22:13:48.529 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Sep 18 22:13:48.529 HYPERVISOR: exec_cmd: vm start R3 
+Sep 18 22:14:18.980 HYPERVISOR: exec_cmd: vm extract_config R3 
+Sep 18 23:24:48.846 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 23:24:48.848 HYPERVISOR: exec_cmd: vm stop R3 
+Sep 18 23:24:49.095 VM: VM R3 shutdown.
+Sep 18 23:24:49.098 HYPERVISOR: exec_cmd: vm extract_config R3 
+Sep 18 23:24:52.578 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 23:24:52.578 HYPERVISOR: exec_cmd: vm rename R3 R5 
+Sep 18 23:24:52.722 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 23:25:26.383 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 18 23:25:26.384 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R5 0 0 
+Sep 18 23:25:26.387 HYPERVISOR: exec_cmd: nio delete udp-8e07b3e7-887d-4199-b726-904ae45fe8bf 
+Sep 18 23:26:08.880 HYPERVISOR: exec_cmd: nio create_udp udp-98b6e2bf-9022-4196-8893-2c68e9fa563c 10020 127.0.0.1 10021 
+Sep 18 23:26:08.891 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-98b6e2bf-9022-4196-8893-2c68e9fa563c 
+Sep 18 23:26:08.892 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 18 23:26:11.658 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Sep 18 23:26:11.661 HYPERVISOR: exec_cmd: vm set_ghost_file R5 C:\Users\Ali\Desktop\5\cn\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M.image-512.ghost 
+Sep 18 23:26:11.662 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 18 23:26:11.665 HYPERVISOR: exec_cmd: vm set_config R5 configs\i3_startup-config.cfg 
+Sep 18 23:26:11.667 HYPERVISOR: exec_cmd: vm start R5 
+Sep 18 23:38:50.240 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 18 23:38:50.242 HYPERVISOR: exec_cmd: vm stop R5 
+Sep 18 23:38:50.475 VM: VM R5 shutdown.
+Sep 18 23:38:50.479 HYPERVISOR: exec_cmd: vm extract_config R5 
+Sep 18 23:38:55.836 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 18 23:38:55.838 HYPERVISOR: exec_cmd: vm extract_config R5 
+Sep 18 23:38:55.901 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Sep 18 23:38:55.903 HYPERVISOR: exec_cmd: vm set_ghost_file R5 C:\Users\Ali\Desktop\5\cn\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M.image-512.ghost 
+Sep 18 23:38:55.905 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 18 23:38:55.907 HYPERVISOR: exec_cmd: vm set_config R5 configs\i3_startup-config.cfg 
+Sep 18 23:38:55.908 HYPERVISOR: exec_cmd: vm start R5 
+Sep 18 23:45:26.437 HYPERVISOR: exec_cmd: vm extract_config R5 
+Sep 19 00:57:17.778 HYPERVISOR: Stopped.
+Sep 19 00:57:17.897 VM: VM R5 shutdown.
+Sep 19 00:57:17.897 VM: VM R5 destroyed.
+Sep 19 00:57:17.911 GENERAL: reset done.

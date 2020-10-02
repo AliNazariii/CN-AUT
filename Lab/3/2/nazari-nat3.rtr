@@ -1,0 +1,79 @@
+
+!
+Version 12.3
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname SwitchA
+enable secret 5 $1$KIN9$ZEF4I5X4Ro8lyDy97ipTgw
+!
+!
+!
+!
+ip subnet-zero
+!
+ip cef
+no ip domain-lookup
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+!
+vtp mode Server
+vtp domain bigdomain
+!
+interface Vlan 1
+ no ip address
+ no ip route-cache
+!
+!
+!
+!
+ip classless
+no ip http server
+!
+!
+!
+!
+!
+!
+!
+line con 0
+line aux 0
+line vty 0 15
+!
+!
+no scheduler allocate
+end
+

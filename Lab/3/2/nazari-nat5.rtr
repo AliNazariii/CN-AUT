@@ -1,0 +1,51 @@
+
+!
+Version 12.3
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname C:
+!
+!
+!
+!
+ip subnet-zero
+!
+ip cef
+ip domain-lookup
+!
+!
+!
+!
+!
+!
+!
+!
+interface Ethernet0
+ ip address 192.168.100.129 255.255.255.0
+ no ip directed-broadcast
+!
+!
+!
+!
+!
+ip classless
+no ip http server
+!
+ip route 0.0.0.0 0.0.0.0 192.168.100.1
+!
+!
+!
+!
+!
+!
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+no scheduler allocate
+end
+exit

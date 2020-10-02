@@ -1,0 +1,67 @@
+
+!
+Version 12.3
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname RouterA
+enable secret 5 $1$lYSY$Ai2eZ8KpUCL9ptJCN1c41w
+!
+!
+!
+!
+ip subnet-zero
+!
+ip cef
+no ip domain-lookup
+!
+!
+!
+!
+!
+!
+!
+!
+interface Serial0/0
+ ip address 200.152.200.2 255.255.255.252
+ no ip directed-broadcast
+ ip nat outside
+!
+interface FastEthernet0/0
+ ip address 192.168.100.1 255.255.255.0
+ no ip directed-broadcast
+ ip nat inside
+!
+interface FastEthernet0/1
+ no ip address
+ no ip directed-broadcast
+ shutdown
+!
+!
+!
+ip nat inside source static 192.168.100.2 200.152.200.3
+ip nat pool pool1 200.152.100.65 200.152.100.70 netmask 255.255.255.248
+ip nat inside source list 1 pool pool1
+ip nat inside source list 2 interface Serial0/0 overload
+!
+!
+ip classless
+no ip http server
+!
+access-list 1 permit 192.168.100.0 0.0.0.255
+access-list 2 permit 192.168.100.0 0.0.0.255
+!
+!
+!
+!
+!
+!
+line con 0
+line aux 0
+line vty 0 4
+!
+!
+no scheduler allocate
+end
+

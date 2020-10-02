@@ -1,0 +1,32 @@
+Sep 18 22:06:42.823 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 18 22:06:42.824 HYPERVISOR: Started on IP = localhost, TCP port = 11831.
+Sep 18 22:06:43.295 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 18 22:06:43.295 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ali\Desktop\5\cn\project-files\dynamips 
+Sep 18 22:06:43.296 GENERAL: working_dir=C:\Users\Ali\Desktop\5\cn\project-files\dynamips
+Sep 18 22:06:43.296 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ali\Desktop\5\cn\project-files\dynamips\fcab5981-2553-425c-a5b4-0b0cb832e12c 
+Sep 18 22:06:43.297 GENERAL: working_dir=C:\Users\Ali\Desktop\5\cn\project-files\dynamips\fcab5981-2553-425c-a5b4-0b0cb832e12c
+Sep 18 22:06:43.301 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Sep 18 22:06:43.303 VM: VM R4 created.
+Sep 18 22:06:43.304 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Sep 18 22:06:43.304 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Sep 18 22:06:43.305 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:06:43.305 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Sep 18 22:06:43.306 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 22:06:43.306 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:06:43.306 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60171348 
+Sep 18 22:06:43.307 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Sep 18 22:06:43.307 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Sep 18 22:06:43.308 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Sep 18 22:06:43.308 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Sep 18 22:06:43.309 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:06:43.309 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+Sep 18 22:06:43.309 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:06:43.310 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-2FE 
+Sep 18 22:06:43.387 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Ali/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M.image 
+Sep 18 22:06:50.392 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 18 22:06:50.393 HYPERVISOR: exec_cmd: vm extract_config R4 
+Sep 18 22:06:50.394 HYPERVISOR: exec_cmd: vm delete R4 
+Sep 18 22:06:50.394 VM: VM R4 destroyed.
+Sep 18 22:06:50.405 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 18 22:06:50.802 HYPERVISOR: Stopped.
+Sep 18 22:06:50.802 GENERAL: reset done.
